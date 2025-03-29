@@ -1,0 +1,16 @@
+Django is a popular Python web frameworks beacause Django has simplicity, scalability and security.
+
+Create a project in Django.
+
+1. Install Visual Studio Code, GitHub, Python
+2. Create Repo in github setup in local PC and open CMD
+3. Make sure you have install python so first check python in CMD | python --version
+4. Create virtual environment | python -m venv [Environment Name]
+5. Activate your virtual environment | [Environment Name]\Scripts\activate
+6. Create requirements.txt file in your basedir | type nul > [file_name.txt]
+7. Install Django | pip install django
+8. make sure you have install django successfully in your virtual environment | python -m django --version
+9. Get list modules and packages in your virtual env | pip freeze
+10. Install moduels and packages add in requirements.txt | pip freeze > requirements.txt
+11. Install moduels and packages from requirements.txt file | pip install -r requirements.txt
+12. Create your django project | django-admin startproject [projectName] .

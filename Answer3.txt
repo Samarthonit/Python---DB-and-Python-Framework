@@ -1,0 +1,3 @@
+django-admin.py make messages command is used for when you want your website to support multiple languages
+(like English, Hindi, Russian, etc), Django needs to know which text needs to be translated. 
+This command helps collect that text.

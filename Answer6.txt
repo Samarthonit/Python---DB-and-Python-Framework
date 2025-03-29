@@ -1,0 +1,1 @@
+Use | python manage.py loaddata <filename> | for 1load data into Django

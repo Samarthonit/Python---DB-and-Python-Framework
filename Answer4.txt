@@ -1,0 +1,32 @@
+In Django, URLs help to connect a web address (like http://127.0.0.1:8000/home/)
+
+
+Create Django URLs
+1) Open myapp/views.py and code
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Welcome to My Website!")
+
+
+2) Inside App folder create urls.py and code
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.home, name='home'),
+]
+
+
+3) Open Project Folder and open urls.py and code this
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('myapp.urls')),  # Connect app URLs
+]
+
+
+4) Run the server
+python manage.py runserver

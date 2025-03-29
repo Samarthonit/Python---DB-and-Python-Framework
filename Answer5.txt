@@ -1,0 +1,35 @@
+A QuerySet is a way to get data from the database in Django. 
+It is like a list of objects from your database table.
+
+
+Creating a New Post in Database
+
+1) Define Model (models.py)
+from django.db import models
+
+class Post(models.Model):
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+
+    def __str__(self):
+        return self.title
+
+
+2) Run migrations:
+python manage.py makemigrations
+python manage.py migrate
+
+
+3) Run Shell:
+python manage.py shell
+
+
+4) code this in the shell:
+from products.models import Post
+
+post = Post(title="Hello Django", content="This is my first post!")
+post.save()
+
+
+5) Save 
+Post.objects.all()
